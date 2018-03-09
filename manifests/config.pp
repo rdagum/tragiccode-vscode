@@ -5,7 +5,7 @@ class vscode::config(
   Stdlib::Absolutepath $vscode_user_code_directory = $::vscode::vscode_user_code_directory,
   Stdlib::Absolutepath $vscode_user_user_directory = $::vscode::vscode_user_user_directory,
   Stdlib::Absolutepath $vscode_user_settings_file_absolute_path = $::vscode::vscode_user_settings_file_absolute_path,
-  Optional[Enum['vs-minimal', 'vs-seti']] $icon_theme = $::vscode::icon_theme,
+  Optional[Enum['material-icon-theme', 'vs-minimal', 'vs-seti']] $icon_theme = $::vscode::icon_theme,
   Optional[String] $color_theme = $::vscode::color_theme,
 ) inherits vscode {
 
